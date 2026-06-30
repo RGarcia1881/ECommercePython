@@ -1,6 +1,6 @@
 from sqlmodel import Field, SQLModel
 
-class Detalles(SQLModel, table=True):
+class detalles_orden(SQLModel, table=True):
     __tablename__ = "detalles"
     id: int | None = Field(default=None, primary_key=True)
     orden_id: int = Field(foreign_key="orden.id", nullable=False)

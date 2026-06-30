@@ -1,5 +1,5 @@
 import redis
-from config.configuracion import ajustes
+from app.config.configuracion import ajustes
 
 redis_pool = redis.ConnectionPool(
     host=ajustes.REDIS_HOST,
