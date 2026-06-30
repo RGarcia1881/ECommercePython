@@ -1,4 +1,4 @@
-from app.config.redis import cliente_redis
+from config.redis import cliente_redis
 
 def test_redis():
     try:

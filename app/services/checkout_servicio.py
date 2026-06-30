@@ -2,7 +2,7 @@ from sqlmodel import select
 from config.redis import cliente_redis
 from config.bd import get_session
 from models.productos_modelo import productos
-from schemas.carrito_esquema import Carrito
+from schemas.carrito_esquema import Carrito, ItemCarritoSalida, CarritoSalida
 
 def procesar_checkout(usuario_id: int):
     gen_redis = cliente_redis()

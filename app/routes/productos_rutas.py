@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
 from models.productos_modelo import productos
-from app.services import producto_servicio
+from services import producto_servicio
 
 router = APIRouter(prefix="/productos", tags=["Productos"])
 

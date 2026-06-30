@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/venv/bin/uvicorn", // Ejecutable de tu entorno virtual
+            "cwd": "${workspaceFolder}",                       // Parados en la raíz externa (checkout/)
+            "args": [
+                "main:app",                                   // Indica el archivo 'main' y la instancia 'app'
+                "--app-dir",
+                "app",                                        // Le dice a uvicorn: "Busca ese main:app dentro de la carpeta app"
+                "--reload",
+                "--port",
+                "8000"
+            ],
+            "jinja": true
+        }
+    ]
+}

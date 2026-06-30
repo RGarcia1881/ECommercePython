@@ -1,5 +1,5 @@
 from sqlmodel import SQLModel, create_engine, Session
-from app.config.configuracion import ajustes
+from config.configuracion import ajustes
 
 URL_BD=(
     f"postgresql://{ajustes.POSTGRES_USUARIO}:{ajustes.POSTGRES_PASSWORD}"

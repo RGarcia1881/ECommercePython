@@ -1,6 +1,6 @@
 from sqlmodel import SQLModel, select, func
-from app.config.bd import get_session, conexion
-from app.models.usuarios_modelo import usuarios
+from config.bd import get_session, conexion
+from models.usuarios_modelo import usuarios
 
 def test_bd():
 
